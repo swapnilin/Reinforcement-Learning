@@ -22,3 +22,36 @@ When running a website with multiple ad banner variations, traditional A/B testi
 num_banner = 5                    # Number of different banners
 no_of_iterations = 100000         # Total number of user interactions
 epsilon = 0.5                     # Exploration-exploitation balance
+
+## Features
+
+- Implements Epsilon-Greedy strategy for banner selection
+- Tracks performance metrics for each banner:
+
+* Click counts
+* Total rewards
+* Average reward (Q-value)
+
+- Balances exploration of new banners with exploitation of known performers
+
+## Key Differences from A/B Testing
+
+1. Adaptive Learning: Updates banner selection probabilities in real-time
+2. Efficiency: Favors better-performing banners while still exploring alternatives
+3. Flexibility: Can adjust to changing user preferences during the testing period
+
+## Future Improvements
+
+- Implement different MAB strategies (Thompson Sampling, UCB)
+- Include decay factors for temporal changes in user preferences
+- Add support for dynamic banner addition/removal
+- Implement Contextual Bandits to consider:
+  - User demographics (age, location, interests)
+  - Time of day and seasonality
+  - Device type and browser information
+  - User browsing history and behavior
+  - Previous interactions with similar ads
+- Add feature engineering capabilities for contextual information
+- Implement more sophisticated reward modeling based on context
+- Add A/B testing comparison benchmarks
+
