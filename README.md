@@ -22,6 +22,7 @@ When running a website with multiple ad banner variations, traditional A/B testi
 num_banner = 5                    # Number of different banners
 no_of_iterations = 100000         # Total number of user interactions
 epsilon = 0.5                     # Exploration-exploitation balance
+```
 
 ## Features
 
