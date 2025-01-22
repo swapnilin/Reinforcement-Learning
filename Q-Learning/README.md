@@ -20,8 +20,8 @@ Q-learning is a model-free reinforcement learning algorithm. The agent learns an
 
 ### Key Components:
 
-- **Learning Rate (\\(\\alpha\\))**: Determines how much new information overrides old information.
-- **Discount Factor (\\(\\gamma\\))**: Weighs the importance of future rewards.
+- **Learning Rate (alpha)**: Determines how much new information overrides old information.
+- **Discount Factor (gamma)**: Weighs the importance of future rewards.
 - **Epsilon-Greedy Strategy**: Balances exploration and exploitation.
 
 ## Installation
@@ -37,4 +37,14 @@ Install the required packages using pip:
 
 ```bash
 pip install gym numpy matplotlib
+```
+
+## Customization
+
+Feel free to adjust the hyperparameters in the notebook to experiment with the agent's performance:
+
+* Number of episodes
+* Learning rate (alpha)
+* Discount factor (gamma)
+* Exploration-exploitation tradeoff (epsilon)
 
